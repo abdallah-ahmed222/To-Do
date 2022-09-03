@@ -1,0 +1,131 @@
+/* :root {
+
+} */
+
+body{
+    background-image: linear-gradient(to right , #232526, #414345 );
+    background-size: cover;
+}
+::selection {
+    background: #77797b;
+    color: black;
+}
+section {
+    color:white;
+}
+.header-row {
+    padding: 2px 0;
+    transform: translateX(-50%);
+}
+form {
+    display: flex;
+    align-items: center;
+}
+input[type="submit"] {
+    color: white;
+    padding-left: 10px;
+}
+form input {
+    border: none;
+    outline: none;
+    background: white;
+    color: white !important;
+}
+h1 {
+    text-align: center;
+}
+#tasks li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#tasks li button {
+    padding: 0 9px;
+    border-radius: 50%;
+}
+#tasks li p {
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    word-wrap: break-word   ;
+}
+.check {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+.but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.display {
+    display: none;
+}
+.apear {
+    display: block;
+}
+.overlay {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.704);
+    z-index: 1000;
+    display: none;
+}
+.overlay-apear {
+    display: block;
+    animation-name: apear;
+    animation-duration: 0.5s;
+    user-select: none;
+}
+.overlay-alert {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.alert__img-container {
+    width: 40%;
+    margin-bottom: 10%;
+}
+.alert__img-container img {
+    width: 100%;
+}
+@keyframes apear {
+    0%{
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+@media(max-width:575px) {
+    * {
+        font-size: 12px;
+    }
+    .overlay .alert__button {
+        font-size: 7px;
+    }
+}
+@media(max-width:767px) {
+    * {
+        font-size: 12px;
+    } 
+    .overlay .alert__button {
+        font-size: 10px;
+    }
+}

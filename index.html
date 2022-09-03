@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="assests/css/vendors/materialize.min.css">
+    <link rel="stylesheet" href="assests/css/vendors/all.min.css">
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay-one">
+        <div class="overlay-alert">
+            <div class="alert__img-container">
+                <img src="assests/imges/fc0ccd22-4fe6-4456-96f5-67aba4a361e4_m.png" alt="crown">
+            </div>
+            <button class="waves-effect waves-light btn alert__button" id="overlay-btn">This Task Already Exist</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay-two">
+        <div class="overlay-alert">
+            <div class="alert__img-container">
+                <img src="assests/imges/fc0ccd22-4fe6-4456-96f5-67aba4a361e4_m.png" alt="crown">
+            </div>
+            <button class="waves-effect waves-light btn alert__button" id="overlay-button">This Cant be Empty</button>
+        </div>
+    </div>
+    <section class="p-4">
+        <div class="container">
+            <header class="">
+                <h1 class="">To Do List  <i class="fa-solid fa-check"></i></h1>
+                <span class="header-row"></span>
+            </header>
+            <article class="">
+                <form action="" >
+                    <input type="text" placeholder="New Task" class="" id="new-task" autocomplete="off">
+                    <input class="waves-effect waves-light btn" type="submit" value="Add" id="submit">
+                </form>
+            </article>
+            <article>
+                <ul id="tasks">
+                </ul>
+            </article>
+            <div class="but"> 
+                <button class="waves-effect waves-light btn display" id="delet-all">Deleate all Tasks</button>
+            </div>
+        </div>
+    </section>
+    <script src="assests/js/vendors/materialize.min.js"></script>
+    <script src="assests/js/app.js"></script>
+</body>
+</html>
